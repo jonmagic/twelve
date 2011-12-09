@@ -82,10 +82,30 @@ Un-share a gauge:
     user_id = '4321dcba'
     gg.gauges('abcd1234').unshare(user_id)
 
+### Content
+
+Get today's top content for a gauge:
+
+    gg.gauges('abcd1234').content
+
+Get the second page of top content for a gauge:
+
+    gg.gauges('abcd1234').content(:page => 2)
+
+Get top content for a specific date of a gauge:
+
+    gg.gauges('abcd1234').content('2011-12-9')
+
+Get the second page for a specific date:
+
+    gg.gauges('abcd1234').content('2011-12-9', :page => 2)
+
 Testing
 -------
 
 The test suite uses [VCR](https://github.com/myronmarston/vcr) to cache actual requests to the Gauges API in a directory called responses in the spec directory. In order for VCR to make and cache the actual calls to the Gauges API you will need to provide your Gauges access_token by placing it in a file named .access_token in the spec directory.
+
+To run the tests for content, referrers, traffic, resolutions, technology, search terms, search engines, and locations, you will also need to have an id for a gauge that has been collecting data for at least two days. You place this gauge id in spec/.gauge_id and spec_helper will use it.
 
 This file is ignored by git (see .gitignore) so you can commit any changes you make to the gem without having to worry about your token being released into the wild.
 

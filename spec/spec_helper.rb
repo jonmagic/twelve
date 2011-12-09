@@ -13,3 +13,5 @@ end
 
 token_file = File.expand_path('../.access_token', __FILE__)
 ACCESS_TOKEN = File.exists?(token_file) ? File.read(token_file).strip : 'faketoken'
+gauge_file = File.expand_path('../.gauge_id', __FILE__)
+GAUGE_ID = File.exists?(gauge_file) ? File.read(gauge_file).strip : 'fakegaugeid'

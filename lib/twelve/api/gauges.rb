@@ -12,6 +12,7 @@ class Twelve
       # enables defining methods on the proxy object
       #
       class Proxy < ::Twelve::ResourceProxy
+        include Twelve::API::Gauges::Content
         include Twelve::API::Gauges::Shares
 
         # Creates a gauge

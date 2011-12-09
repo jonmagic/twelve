@@ -3,3 +3,4 @@ Gemfile.lock
 spec/.access_token
 spec/responses/
 spec/.gauge_id
+twelve-0.1.0.gem

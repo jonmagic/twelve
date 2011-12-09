@@ -128,6 +128,16 @@ Get a specific months traffic:
 
     bfg.gauges('abcd1234').traffic('2011-10-1')
 
+### Resolutions
+
+Get this month's screen sizes for a gauge:
+
+    bfg.gauges('abcd1234').traffic
+
+Get a specific month's screen sizes:
+
+    bfg.gauges('abcd1234').traffic('2011-10-1')
+
 Testing
 -------
 

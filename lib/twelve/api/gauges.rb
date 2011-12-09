@@ -16,6 +16,7 @@ class Twelve
         include Twelve::API::Gauges::Content
         include Twelve::API::Gauges::Referrers
         include Twelve::API::Gauges::Traffic
+        include Twelve::API::Gauges::Resolutions
 
         # Creates a gauge
         #

@@ -67,6 +67,21 @@ Delete a gauge:
 
     gg.gauges('abcd1234').destroy
 
+### Sharing
+
+List who a gauge is shared with:
+
+    gg.gauges('abcd1234').shares
+
+Share a gauge:
+
+    gg.gauges('abcd1234').share({:email => 'john@doe.com'})
+
+Un-share a gauge:
+
+    user_id = '4321dcba'
+    gg.gauges('abcd1234').unshare(user_id)
+
 Testing
 -------
 

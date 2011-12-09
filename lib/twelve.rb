@@ -4,12 +4,14 @@ require 'twelve/connection'
 require 'twelve/resource_proxy'
 require 'twelve/api/me'
 require 'twelve/api/clients'
+require 'twelve/api/gauges'
 
 class Twelve
   attr_reader :connection
 
   include Twelve::API::Me
   include Twelve::API::Clients
+  include Twelve::API::Gauges
 
   # Instantiates Twelve, requires an access_token
   #

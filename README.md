@@ -39,6 +39,34 @@ Delete an API client:
     client_id = 'abcd1234'
     gg.clients(client_id).destroy
 
+### Gauges
+
+Get your gauges:
+
+    gg.gauges
+
+Create a gauge:
+
+    gg.gauges.create({
+      :title => 'theprogrammingbutler.com',
+      :tz => 'Eastern Time (US & Canada)'
+    })
+
+Get a specific gauge:
+
+    gauge_id = 'abcd1234'
+    gg.gauges(gauge_id)
+
+Update a gauge:
+
+    gg.gauges('abcd1234', {
+      :title => 'Go get your guns'
+    })
+
+Delete a gauge:
+
+    gg.gauges('abcd1234').destroy
+
 Testing
 -------
 

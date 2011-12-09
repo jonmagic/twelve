@@ -124,7 +124,7 @@ Get this month's traffic for a gauge:
 
     bfg.gauges('abcd1234').traffic
 
-Get a specific months traffic:
+Get a specific month's traffic:
 
     bfg.gauges('abcd1234').traffic('2011-10-1')
 

@@ -100,6 +100,24 @@ Get the second page for a specific date:
 
     bfg.gauges('abcd1234').content('2011-12-9', :page => 2)
 
+### Referrers
+
+Get today's referrers for a gauge:
+
+    bfg.gauges('abcd1234').referrers
+
+Get the second page of referrers for a gauge:
+
+    bfg.gauges('abcd1234').referrers(:page => 2)
+
+Get referrers for a specific date of a gauge:
+
+    bfg.gauges('abcd1234').referrers('2011-12-9')
+
+Get the second page for a specific date:
+
+    bfg.gauges('abcd1234').referrers('2011-12-9', :page => 2)
+
 Testing
 -------
 

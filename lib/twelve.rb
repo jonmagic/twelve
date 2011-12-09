@@ -10,6 +10,7 @@ require 'twelve/api/gauges/referrers'
 require 'twelve/api/gauges/traffic'
 require 'twelve/api/gauges/resolutions'
 require 'twelve/api/gauges/technology'
+require 'twelve/api/gauges/terms'
 require 'twelve/api/gauges'
 
 class Twelve

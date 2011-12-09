@@ -18,6 +18,7 @@ class Twelve
         include Twelve::API::Gauges::Traffic
         include Twelve::API::Gauges::Resolutions
         include Twelve::API::Gauges::Technology
+        include Twelve::API::Gauges::Terms
 
         # Creates a gauge
         #

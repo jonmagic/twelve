@@ -148,6 +148,24 @@ Get a specific month's technology:
 
     bfg.gauges('abcd1234').technology('2011-10-1')
 
+### Search Terms
+
+Get today's search terms for a gauge:
+
+    bfg.gauges('abcd1234').terms
+
+Get the second page of search terms for a gauge:
+
+    bfg.gauges('abcd1234').terms(:page => 2)
+
+Get search terms for a specific date of a gauge:
+
+    bfg.gauges('abcd1234').terms('2011-12-9')
+
+Get the second page for a specific date:
+
+    bfg.gauges('abcd1234').terms('2011-12-9', :page => 2)
+
 Testing
 -------
 

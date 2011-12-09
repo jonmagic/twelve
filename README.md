@@ -3,6 +3,11 @@ Twelve (gauge)
 
 This is an unofficial ruby client for the [Gauges API](http://get.gaug.es/documentation/api/). The end goal is a complete, simple, and intuitive ruby API for all things Gauges.
 
+Installation
+------------
+
+    gem install twelve
+
 Usage
 -----
 

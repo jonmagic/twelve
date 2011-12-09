@@ -176,6 +176,16 @@ Get a specific month's search engines:
 
     bfg.gauges('abcd1234').engines('2011-10-1')
 
+### Locations
+
+Get this month's locations for a gauge:
+
+    bfg.gauges('abcd1234').locations
+
+Get a specific month's locations:
+
+    bfg.gauges('abcd1234').locations('2011-10-1')
+
 Testing
 -------
 

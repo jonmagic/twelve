@@ -2,9 +2,12 @@
 require 'twelve/version'
 require 'twelve/connection'
 require 'twelve/resource_proxy'
+require 'twelve/api/me'
 
 class Twelve
   attr_reader :connection
+
+  include Twelve::API::Me
 
   # Instantiates Twelve, requires an access_token
   #

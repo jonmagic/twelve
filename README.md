@@ -11,6 +11,19 @@ Instantiate the client:
     access_token = "abcd1234"
     gg = Twelve.new(access_token)
 
+### Your Information
+
+Get your information:
+
+    gg.me
+
+Update your information:
+
+    gg.me({
+      :first_name => "John",
+      :last_name => "Doe"
+    })
+
 Testing
 -------
 

@@ -14,9 +14,9 @@ class Twelve
       @access_token = access_token
 
       super('https://secure.gaug.es') do |builder|
-        builder.use     Faraday::Request::JSON
-        builder.use     Faraday::Response::ParseJson
-        builder.adapter Faraday.default_adapter
+        builder.request   :url_encoded
+        builder.use       Faraday::Response::ParseJson
+        builder.adapter   Faraday.default_adapter
       end
 
       self.headers["X-Gauges-Token"] = "#{access_token}" if access_token

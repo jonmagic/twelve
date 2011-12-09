@@ -28,7 +28,7 @@ describe Twelve::ResourceProxy do
 
   describe "#method_missing" do
     it "should pass message and args to target" do
-      subject.upcase.should == "BAR!"
+      lambda { subject.upcase }.should raise_error("Implement in Proxy class for resource")
     end
   end
 end

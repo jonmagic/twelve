@@ -24,6 +24,21 @@ Update your information:
       :last_name => "Doe"
     })
 
+### API Clients
+
+Get your API clients:
+
+    gg.clients
+
+Create an API client:
+
+    gg.clients.create(:description => "12 Gauge")
+
+Delete an API client:
+
+    client_id = 'abcd1234'
+    gg.clients.delete(client_id)
+
 Testing
 -------
 

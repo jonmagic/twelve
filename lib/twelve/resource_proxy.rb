@@ -40,7 +40,7 @@ class Twelve
     # Returns json
     #
     def subject
-      @subject ||= connection.get(path_prefix).body
+      raise "Implement in Proxy class for resource"
     end
   end
 end

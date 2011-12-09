@@ -1,4 +1,4 @@
-Twelve
+Twelve (gauge)
 ==================
 
 This is an unofficial ruby client for the [Gauges API](http://get.gaug.es/documentation/api/). The end goal is a complete, simple, and intuitive ruby API for all things Gauges.
@@ -9,17 +9,17 @@ Usage
 Instantiate the client:
 
     access_token = "abcd1234"
-    gg = Twelve.new(access_token)
+    bfg = Twelve.new(access_token)
 
 ### Your Information
 
 Get your information:
 
-    gg.me
+    bfg.me
 
 Update your information:
 
-    gg.me({
+    bfg.me({
       :first_name => "John",
       :last_name => "Doe"
     })
@@ -28,26 +28,26 @@ Update your information:
 
 Get your API clients:
 
-    gg.clients
+    bfg.clients
 
 Create an API client:
 
-    gg.clients.create(:description => "12 Gauge")
+    bfg.clients.create(:description => "12 Gauge")
 
 Delete an API client:
 
     client_id = 'abcd1234'
-    gg.clients(client_id).destroy
+    bfg.clients(client_id).destroy
 
 ### Gauges
 
 Get your gauges:
 
-    gg.gauges
+    bfg.gauges
 
 Create a gauge:
 
-    gg.gauges.create({
+    bfg.gauges.create({
       :title => 'theprogrammingbutler.com',
       :tz => 'Eastern Time (US & Canada)'
     })
@@ -55,50 +55,50 @@ Create a gauge:
 Get a specific gauge:
 
     gauge_id = 'abcd1234'
-    gg.gauges(gauge_id)
+    bfg.gauges(gauge_id)
 
 Update a gauge:
 
-    gg.gauges('abcd1234', {
+    bfg.gauges('abcd1234', {
       :title => 'Go get your guns'
     })
 
 Delete a gauge:
 
-    gg.gauges('abcd1234').destroy
+    bfg.gauges('abcd1234').destroy
 
 ### Sharing
 
 List who a gauge is shared with:
 
-    gg.gauges('abcd1234').shares
+    bfg.gauges('abcd1234').shares
 
 Share a gauge:
 
-    gg.gauges('abcd1234').share({:email => 'john@doe.com'})
+    bfg.gauges('abcd1234').share({:email => 'john@doe.com'})
 
 Un-share a gauge:
 
     user_id = '4321dcba'
-    gg.gauges('abcd1234').unshare(user_id)
+    bfg.gauges('abcd1234').unshare(user_id)
 
 ### Content
 
 Get today's top content for a gauge:
 
-    gg.gauges('abcd1234').content
+    bfg.gauges('abcd1234').content
 
 Get the second page of top content for a gauge:
 
-    gg.gauges('abcd1234').content(:page => 2)
+    bfg.gauges('abcd1234').content(:page => 2)
 
 Get top content for a specific date of a gauge:
 
-    gg.gauges('abcd1234').content('2011-12-9')
+    bfg.gauges('abcd1234').content('2011-12-9')
 
 Get the second page for a specific date:
 
-    gg.gauges('abcd1234').content('2011-12-9', :page => 2)
+    bfg.gauges('abcd1234').content('2011-12-9', :page => 2)
 
 Testing
 -------

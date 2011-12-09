@@ -138,6 +138,16 @@ Get a specific month's screen sizes:
 
     bfg.gauges('abcd1234').traffic('2011-10-1')
 
+### Technology
+
+Get browsers and platforms for a gauge:
+
+    bfg.gauges('abcd1234').technology
+
+Get a specific month's technology:
+
+    bfg.gauges('abcd1234').technology('2011-10-1')
+
 Testing
 -------
 

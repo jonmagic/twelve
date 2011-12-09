@@ -166,6 +166,16 @@ Get the second page for a specific date:
 
     bfg.gauges('abcd1234').terms('2011-12-9', :page => 2)
 
+### Search Engines
+
+Get search engines for a gauge:
+
+    bfg.gauges('abcd1234').engines
+
+Get a specific month's search engines:
+
+    bfg.gauges('abcd1234').engines('2011-10-1')
+
 Testing
 -------
 

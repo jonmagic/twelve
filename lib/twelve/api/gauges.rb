@@ -19,6 +19,7 @@ class Twelve
         include Twelve::API::Gauges::Resolutions
         include Twelve::API::Gauges::Technology
         include Twelve::API::Gauges::Terms
+        include Twelve::API::Gauges::Engines
 
         # Creates a gauge
         #

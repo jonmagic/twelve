@@ -15,6 +15,7 @@ class Twelve
         include Twelve::API::Gauges::Shares
         include Twelve::API::Gauges::Content
         include Twelve::API::Gauges::Referrers
+        include Twelve::API::Gauges::Traffic
 
         # Creates a gauge
         #

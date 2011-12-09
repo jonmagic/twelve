@@ -7,6 +7,7 @@ require 'twelve/api/clients'
 require 'twelve/api/gauges/shares'
 require 'twelve/api/gauges/content'
 require 'twelve/api/gauges/referrers'
+require 'twelve/api/gauges/traffic'
 require 'twelve/api/gauges'
 
 class Twelve

@@ -118,6 +118,16 @@ Get the second page for a specific date:
 
     bfg.gauges('abcd1234').referrers('2011-12-9', :page => 2)
 
+### Trafic
+
+Get this month's traffic for a gauge:
+
+    bfg.gauges('abcd1234').traffic
+
+Get a specific months traffic:
+
+    bfg.gauges('abcd1234').traffic('2011-10-1')
+
 Testing
 -------
 

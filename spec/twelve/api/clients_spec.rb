@@ -25,16 +25,16 @@ describe Twelve::API::Clients do
           client = subject.clients.create(:description => "12 Gauge")
           should_be_a_client(client)
           # cleanup
-          subject.clients.delete(client['key'])
+          subject.clients(client['key']).destroy
         end
       end
     end
 
-    describe "#delete" do
+    describe "#destroy" do
       it "returns deleted client" do
         VCR.use_cassette('clients_delete') do
           delete = subject.clients.create(:description => "Testing Twelve")
-          client = subject.clients.delete(delete['key'])
+          client = subject.clients(delete['key']).destroy
           should_be_a_client(client)
         end
       end

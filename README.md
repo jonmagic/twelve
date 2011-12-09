@@ -37,7 +37,7 @@ Create an API client:
 Delete an API client:
 
     client_id = 'abcd1234'
-    gg.clients.delete(client_id)
+    gg.clients(client_id).destroy
 
 Testing
 -------

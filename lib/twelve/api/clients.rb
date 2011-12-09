@@ -29,8 +29,8 @@ class Twelve
         #
         # Returns json
         #
-        def delete(key)
-          connection.delete("#{path_prefix}/#{key}").body['client']
+        def destroy
+          connection.delete(path_prefix).body['client']
         end
 
         # Get API clients
@@ -46,8 +46,9 @@ class Twelve
       #
       # Returns json
       #
-      def clients
-        Proxy.new(connection, '/clients')
+      def clients(id=nil)
+        path_prefix = id ? "/clients/#{id}" : '/clients'
+        Proxy.new(connection, path_prefix)
       end
     end
   end
